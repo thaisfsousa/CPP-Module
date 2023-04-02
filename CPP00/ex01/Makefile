@@ -1,13 +1,14 @@
-NAME	= thisIsBrain
+NAME	= PhoneBook
 
-SRCS	= 	main.cpp
+SRCS	= 	Contact.cpp PhoneBook.cpp main.cpp
+
 OBJS	=  $(SRCS:.cpp=.o)
 
-CFLAGS	= -Wall -Wextra -Werror -g  -std=c++98
+CFLAGS	= -Wall -Wextra -Werror -g 
 
 $(NAME):	$(OBJS)
-			c++ $(CFLAGS) $(SRCS) -o $(NAME)
-			@echo  "\n \033[38;5;198m $(NAME) compiled \n \033[0;m"
+			c++ $(CFLAGS) $(SRCS) -o PhoneBook
+			@echo "\n \033[38;5;198m $(NAME) compiled \n \033[0;m"
 
 
 all:		$(NAME)
@@ -26,6 +27,6 @@ fclean:		clean
 
 
 re:			fclean all
-			@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
+				@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
 
 .PHONY:		all clean fclean re

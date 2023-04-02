@@ -1,6 +1,7 @@
-NAME	= thisIsBrain
+NAME	= Harl
 
-SRCS	= 	main.cpp
+SRCS	= 	main.cpp Harl.cpp
+
 OBJS	=  $(SRCS:.cpp=.o)
 
 CFLAGS	= -Wall -Wextra -Werror -g  -std=c++98
@@ -24,8 +25,7 @@ clean:
 fclean:		clean
 			@rm -f $(NAME)
 
-
 re:			fclean all
-			@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
+				@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
 
 .PHONY:		all clean fclean re

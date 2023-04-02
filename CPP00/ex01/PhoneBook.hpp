@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 18:48:24 by thsousa           #+#    #+#             */
-/*   Updated: 2023/03/28 17:24:51 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/04/02 13:41:53 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ public:
   void printTable(Contact cntct, int index);
   void setCount();
   int tablePrint(std::string aux);
-  void finishPhonebook();
 };
 
 #endif

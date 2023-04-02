@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 18:47:43 by thsousa           #+#    #+#             */
-/*   Updated: 2023/03/28 16:54:18 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/04/02 13:41:48 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,6 @@ int PhoneBook::getCount()
 void PhoneBook::setCount()
 {
     this->countContacts = this->countContacts + 1;
-}
-
-void PhoneBook::finishPhonebook()
-{
-    int nbrContacts;
-    if (this->getCount() > 8)
-        nbrContacts = 8;
-    else
-        nbrContacts = this->getCount();
 }
 
 void PhoneBook::newContact()

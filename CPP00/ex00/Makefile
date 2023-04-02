@@ -4,7 +4,7 @@ SRCS	= 	megaphone.cpp
 
 OBJS	=  $(SRCS:.cpp=.o)
 
-CFLAGS	= -Wall -Wextra -Werror -g
+CFLAGS	= -Wall -Wextra -Werror -g  -std=c++98
 
 $(NAME):	$(OBJS)
 			c++ $(CFLAGS) $(SRCS) -o $(NAME)
@@ -24,9 +24,9 @@ clean:
 
 fclean:		clean
 			@rm -f $(NAME)
-			@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
 
 
 re:			fclean all
+				@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
 
 .PHONY:		all clean fclean re

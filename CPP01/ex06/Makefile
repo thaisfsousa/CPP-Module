@@ -1,14 +1,14 @@
-NAME	= PhoneBook
+NAME	= harlFilter
 
-SRCS	= 	Contact.cpp PhoneBook.cpp main.cpp
+SRCS	= 	main.cpp Harl.cpp
 
 OBJS	=  $(SRCS:.cpp=.o)
 
-CFLAGS	= -Wall -Wextra -Werror -g
+CFLAGS	= -Wall -Wextra -Werror -g -std=c++98
 
 $(NAME):	$(OBJS)
-			c++ $(CFLAGS) $(SRCS) -o PhoneBook
-			@echo "\n \033[38;5;198m $(NAME) compiled \n \033[0;m"
+			c++ $(CFLAGS) $(SRCS) -o $(NAME)
+			@echo  "\n \033[38;5;198m $(NAME) compiled \n \033[0;m"
 
 
 all:		$(NAME)
@@ -24,9 +24,8 @@ clean:
 
 fclean:		clean
 			@rm -f $(NAME)
-			@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
-
 
 re:			fclean all
+				@echo "\n \033[0;34m $(NAME) Cleaned and rebuilt \n \033[0;m"
 
 .PHONY:		all clean fclean re
