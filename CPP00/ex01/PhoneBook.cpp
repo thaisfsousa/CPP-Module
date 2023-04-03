@@ -34,8 +34,6 @@ void PhoneBook::newContact()
 
     newContact = newContact.addContact();
     index = this->getCount() % 8;
-    // if (this->getCount() > 8)
-    //     this->countContacts = 0;
     this->setCount();
     this->contacts[index] = newContact;
 }

@@ -35,7 +35,7 @@ int main()
       newPhoneBook.printContact();
     else if (!aux.compare("exit") || (!aux.compare("EXIT")))
     {
-        std::cout << "\033[1;32m PhoneBook finished. \n \033[0m";
+        std::cout << "\033[1;32m PhoneBook finished. \n\033[0m";
         break;
     }
     else

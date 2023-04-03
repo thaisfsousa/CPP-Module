@@ -22,6 +22,8 @@ int main(int argc, char **argv)
     std::string replace = argv[3];
     std::string filename = argv[1];
     std::ifstream file(filename);
+    int posChar = 0;
+    int size = 0;
 
     if (file.is_open())
     {
@@ -29,8 +31,13 @@ int main(int argc, char **argv)
       std::string temp;
       while (std::getline(file, line))
       {
-        if (line == original)
-          line = replace;
+        while (line.find(original) != std::string::npos)
+        {
+            posChar = line.find(original);
+            std::string aux = line.substr(size, posChar);
+            int len = posChar + replace.length();
+            line = aux + replace + line.substr(len, line.length());    
+        }
         line += '\n';
         temp += line;
       }

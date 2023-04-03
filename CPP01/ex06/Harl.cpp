@@ -94,5 +94,5 @@ void Harl::complain(int i)
 
 Harl::~Harl()
 {
-  std::cout << "\n \033[1;32m Bye bye Harl. \n \033[0m";
+  std::cout << "\n \033[1;32m Bye bye Harl. \n\033[0m";
 }

@@ -27,8 +27,6 @@ int main(int argc, char **argv)
         j++;
       }
       i++;
-      if (argv[i])
-        std::cout << " ";
     }
   }
   else if (argc == 1)

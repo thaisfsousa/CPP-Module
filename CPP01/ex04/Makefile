@@ -20,6 +20,7 @@ valgrind:	all
 clean:	
 			@rm -f $(OBJS)
 			@rm -rf ./$(NAME).dSYM
+			@rm -rf ./*.replace
 			@echo "\n \033[0;32m $(NAME) cleaned \n \033[0;m"
 
 fclean:		clean
