@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:19:26 by thsousa           #+#    #+#             */
-/*   Updated: 2023/04/18 15:05:58 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/04/18 15:21:01 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,51 @@ Fixed::Fixed(const float floatNbr)
 Fixed::~Fixed()
 {
     std::cout << "Destructor Called" << std::endl;
+}
+
+Fixed::Fixed& operator=(Fixed const &fixedPoint)
+{
+
+}
+Fixed& operator>(Fixed const &fixedPoint)
+{
+    return (this->value > fixedPoint.getRawBits());
+}
+Fixed& operator<(Fixed const &fixedPoint)
+{
+
+}
+Fixed& operator>=(Fixed const &fixedPoint)
+{
+
+}
+Fixed& operator>=(Fixed const &fixedPoint)
+{
+
+}
+Fixed& operator==(Fixed const &fixedPoint)
+{
+
+}
+Fixed& operator!=(Fixed const &fixedPoint)
+{
+
+}
+Fixed& operator+(Fixed const &fixedPoint)
+{
+    
+}
+Fixed& operator-(Fixed const &fixedPoint)
+{
+    
+}
+Fixed& operator*(Fixed const &fixedPoint)
+{
+    
+}
+Fixed& operator/(Fixed const &fixedPoint)
+{
+
 }
 
 int Fixed::getRawBits(void) const

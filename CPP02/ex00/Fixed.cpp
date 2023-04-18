@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:19:26 by thsousa           #+#    #+#             */
-/*   Updated: 2023/04/11 15:15:39 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/04/18 11:56:53 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,12 @@ Fixed::Fixed(Fixed &toCopy)
 {
     std::cout << "Copy Constructor Called" << std::endl;
     *this = toCopy;
+}
+
+Fixed& Fixed::operator=(Fixed const &FixedPoint){
+    std::cout << "Copy assigment operator called" << std::endl;
+    this->value = FixedPoint.getRawBits();
+    return *this;
 }
 
 Fixed::~Fixed()
