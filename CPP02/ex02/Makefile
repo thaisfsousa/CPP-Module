@@ -1,4 +1,4 @@
-NAME	= floatInt
+NAME	= overloads
 
 SRCS	= 	main.cpp Fixed.cpp
 
