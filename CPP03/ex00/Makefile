@@ -4,7 +4,7 @@ SRCS	= 	main.cpp ClapTrap.cpp
 
 OBJS	=  $(SRCS:.cpp=.o)
 
-CFLAGS	= -Wall -Wextra -Werror -g  -std=c++98
+CFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 $(NAME):	$(OBJS)
 			c++ $(CFLAGS) $(SRCS) -o $(NAME)

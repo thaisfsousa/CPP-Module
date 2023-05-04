@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
+/*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:19:26 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 18:09:55 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/04 16:45:39 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &ClapClap)
     this->setHitPoints(ClapClap.getHit());
     this->setEnergyPoints(ClapClap.getEnergy());
     this->setAttackDamagePoints(0);
-    this->setName(name);
+    this->setName(ClapClap.getName());
     return (*this);
 }
 

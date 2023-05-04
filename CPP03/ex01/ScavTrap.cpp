@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:37:56 by thsousa           #+#    #+#             */
-/*   Updated: 2023/04/25 17:09:03 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/04 16:51:19 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ ScavTrap::ScavTrap(std::string name)
     this->setHitPoints(100);
     this->setName(name);
     this->setAttackDamagePoints(20);
+}
+
+ScavTrap::ScavTrap(ScavTrap const &toCopy)
+{
+    std::cout << "Copy Constructor Called" << std::endl;
+    *this = toCopy;
 }
 
 ScavTrap& ScavTrap::operator=(const ScavTrap &ClapClap)
@@ -66,5 +72,5 @@ void    ScavTrap::guardGate()
 
 ScavTrap::~ScavTrap()
 {
-    std::cout << "Destructor Called" << std::endl;
+    std::cout << "ScavTrap Destructor Called" << std::endl;
 }

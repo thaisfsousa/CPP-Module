@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:09:19 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 15:48:27 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/04/26 17:35:02 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ public:
     int     getAttack() const;
     std::string getName() const ;
     void    setAttackDamagePoints(int points);
+    
 };
 
 

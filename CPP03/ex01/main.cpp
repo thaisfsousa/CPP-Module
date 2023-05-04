@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:23:46 by thsousa           #+#    #+#             */
-/*   Updated: 2023/04/25 17:07:29 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/04 16:13:22 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,34 @@
 
 int main()
 {
-    // ClapTrap teste("Thais");
-    // ScavTrap teste2("Anna");
-    // teste.attack("Anna");
-    // teste.beRepaired(5);
-    // teste.takeDamage(2);
-    // teste2.attack("TESTANDO");
-    ScavTrap	c("Pietro");
+	ClapTrap c1;
+    ScavTrap c2("teste");
+	ScavTrap aux;
+    ScavTrap c3(aux);
 
-	c.beRepaired(5);
-	c.beRepaired(10);
-	c.attack("Eric");
-	c.takeDamage(3);
-	c.attack("Eric");
-	c.takeDamage(20);
-	c.attack("Eric");
-	c.beRepaired(6);
-	c.attack("Eric");
-	c.guardGate();
-    return (0);
+    std::cout << std::endl;
+
+    c1.attack("Thais");
+    c2.attack("Anna");
+    c3.attack("Raoni");
+
+    std::cout << std::endl;
+
+    c1.takeDamage(20);
+    c2.takeDamage(50);
+    c2.takeDamage(50);
+    c3.takeDamage(5);
+
+    std::cout << std::endl;
+
+    c1.beRepaired(1000);
+    c2.beRepaired(1);
+    c3.beRepaired(5);
+
+    std::cout << std::endl;
+
+	c2.guardGate();
+	c3.guardGate();
+
+    std::cout << std::endl;
 }

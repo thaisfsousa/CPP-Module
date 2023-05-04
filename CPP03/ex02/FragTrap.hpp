@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
+/*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:41:34 by thsousa           #+#    #+#             */
-/*   Updated: 2023/04/26 17:37:13 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/04 18:30:55 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-#define SCAVTRAP_HPP
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 
 #include <string>
 #include <iostream>
@@ -19,18 +19,18 @@
 #include <stdio.h>
 #include "ClapTrap.hpp"
 
-class ScavTrap : ClapTrap {
+class FragTrap : ClapTrap {
     private:
     public:
-    ScavTrap();
-    ScavTrap(std::string name);
-    ScavTrap& operator=(const ScavTrap &ClapClap);
-    ScavTrap(ScavTrap const &toCopy);
-    ~ScavTrap();
+    FragTrap();
+    FragTrap(std::string name);
+    FragTrap& operator=(const FragTrap &ClapClap);
+    FragTrap(FragTrap const &toCopy);
+    ~FragTrap();
     void    takeDamage(unsigned int amount);
     void    beRepaired(unsigned int amount);
     void    attack(const std::string& target);
-    void guardGate();
+    void    highFivesGuys(void);
 };
 
 #endif
