@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:37:56 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 18:30:41 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/05 12:30:38 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,9 @@ void    FragTrap::beRepaired(unsigned int amount)
     this->setEnergyPoints(this->getEnergy() - 1);
 }
 
-void    highFivesGuys(void)
+void    FragTrap::highFivesGuys()
 {
-
+	std::cout << "Positive high fives requested : ✋ !! " << std::endl;
 }
 
 FragTrap::~FragTrap()

@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:23:46 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 18:31:39 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/05 12:26:19 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int main()
 	c.attack("Eric");
 	c.beRepaired(6);
 	c.attack("Eric");
+	c.highFivesGuys();
     return (0);
 }
