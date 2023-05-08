@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:37:56 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/08 10:16:32 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/08 10:15:32 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void    ScavTrap::takeDamage(unsigned int amount)
 	if (this->getHit() > 0 && this->getEnergy() > 0)
 	{
 		std::cout << "ScavTrap " << this->getName() << " took " << amount << " points of damage! "<< std::endl;
-		this->setHitPoints(this->getHit() - amount);
+    	this->setHitPoints(this->getHit() - amount);
 	}
 	else
         std::cout << "ScavTrap " << this->getName() << " has not HP or EP" << std::endl;

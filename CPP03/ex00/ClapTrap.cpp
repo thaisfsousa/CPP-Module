@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:19:26 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 18:09:55 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/08 10:16:53 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ void    ClapTrap::attack(const std::string& target)
     if (this->getEnergy() > 0 && this->getHit() > 0)
         std::cout << "ClapTrap " << this->getName() << " atacks " << target << ", causing " << this->getAttack() << " points of damage!" << std::endl;
     else
-         std::cout << "Can't get enough points" << std::endl;
+         std::cout << "ClapTrap " << this->getName() << " has not HP or EP." << std::endl; 
 }
 
 std::string ClapTrap::getName() const
@@ -101,23 +101,23 @@ int ClapTrap::getHit() const
 
 void    ClapTrap::takeDamage(unsigned int amount)
 {
-    if (this->getHit() > 0)
+    if (this->getHit() > 0 && this->getEnergy() > 0)
     {
         std::cout << "ClapTrap " << this->getName() << " took " << amount << " points of damage! "<< std::endl;
-        this->setEnergyPoints(this->getEnergy() - 1);
+		this->setHitPoints(this->getHit() - amount);
     }
     else
-        std::cout << "Can't get enough points" << std::endl;
+        std::cout << "ClapTrap " << this->getName() << " has not HP or EP." << std::endl;
 }
 
 void    ClapTrap::beRepaired(unsigned int amount)
 {
-    if (this->getEnergy() > 0)
+    if (this->getEnergy() > 0 && this->getHit() > 0)
     {
         std::cout << "ClapTrap " << this->getName() << " was repaired. " << std::endl;
         this->setHitPoints(this->getHit() + amount);
         this->setEnergyPoints(this->getEnergy() - 1);
     }
     else
-        std::cout << "Can't get enough points" << std::endl;
+        std::cout << "ClapTrap " << this->getName() << " has not HP or EP." << std::endl;
 }

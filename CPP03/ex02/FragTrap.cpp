@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:37:56 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/05 12:30:38 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/08 10:15:07 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ FragTrap::FragTrap()
 
 FragTrap::FragTrap(std::string name)
 {
-    std::cout << "FragTrap Default constructor called \n";
+    std::cout << "Named FragTrap constructor called \n";
     this->setEnergyPoints(100);
     this->setHitPoints(100);
     this->setName(name);
@@ -42,26 +42,41 @@ FragTrap& FragTrap::operator=(const FragTrap &ClapClap)
 
 void    FragTrap::attack(const std::string& target)
 {
-    std::cout << "FragTrap " << this->getName() << " atacks " << target << ", causing " << this->getAttack() << " points of damage!" << std::endl;
-    this->setEnergyPoints(this->getEnergy() - 1);
+	if(this->getEnergy() > 0 && this->getHit() > 0)
+	{
+    	std::cout << "FragTrap " << this->getName() << " atacks " << target << ", causing " << this->getAttack() << " points of damage!" << std::endl;
+    	this->setEnergyPoints(this->getEnergy() - 1);
+	}
+	else	
+        std::cout << "FragTrap " << this->getName() << " has not HP or EP" << std::endl;
 }
 
 void    FragTrap::takeDamage(unsigned int amount)
-{
-    std::cout << "FragTrap " << this->getName() << " took " << amount << " points of damage! "<< std::endl;
-    this->setHitPoints(getHit() - amount);
+{	
+	if(this->getEnergy() > 0 && this->getHit() > 0)
+	{
+		std::cout << "FragTrap " << this->getName() << " took " << amount << " points of damage! "<< std::endl;
+    	this->setHitPoints(getHit() - amount);
+	}
+	else	
+        std::cout << "FragTrap " << this->getName() << " has not HP or EP" << std::endl;
 }
 
 void    FragTrap::beRepaired(unsigned int amount)
 {
-    std::cout << "FragTrap " << this->getName() << " was repaired. " << std::endl;
-    this->setHitPoints(this->getHit() + amount);
-    this->setEnergyPoints(this->getEnergy() - 1);
+	if(this->getEnergy() > 0 && this->getHit() > 0)
+	{
+		std::cout << "FragTrap " << this->getName() << " was repaired. " << std::endl;
+    	this->setHitPoints(this->getHit() + amount);
+    	this->setEnergyPoints(this->getEnergy() - 1);
+	}
+	else
+        std::cout << "FragTrap " << this->getName() << " has not HP or EP" << std::endl;
 }
 
 void    FragTrap::highFivesGuys()
 {
-	std::cout << "Positive high fives requested : ✋ !! " << std::endl;
+	std::cout << "FragTrap " << this->getName()  << " request a high five ✋ !! " << std::endl;
 }
 
 FragTrap::~FragTrap()

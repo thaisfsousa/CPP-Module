@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:23:46 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 16:13:22 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/08 09:54:35 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int main()
 
     std::cout << std::endl;
 
+	c1.takeDamage(80);
     c1.attack("Thais");
     c2.attack("Anna");
     c3.attack("Raoni");

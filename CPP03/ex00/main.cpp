@@ -6,7 +6,7 @@
 /*   By: thsousa <thsousa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:23:46 by thsousa           #+#    #+#             */
-/*   Updated: 2023/05/04 18:21:33 by thsousa          ###   ########.fr       */
+/*   Updated: 2023/05/08 09:58:06 by thsousa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int main()
 	b.beRepaired(5);
 	b.attack("Eric");
 	b.takeDamage(3);
+	std::cout << b.getHit() << std::endl;
+
 	b.attack("Eric");
 	b.takeDamage(20);
 	b.attack("Eric");
