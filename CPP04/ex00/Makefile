@@ -4,10 +4,10 @@ SRCS	= 	main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS	=  $(SRCS:.cpp=.o)
 
-CFLAGS	= -Wall -Wextra -Werror -std=c++98
+CPPFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 $(NAME):	$(OBJS)
-			c++ $(CFLAGS) $(SRCS) -o $(NAME)
+			c++ $(CPPFLAGS) $(SRCS) -o $(NAME)
 			@echo  "\n \033[38;5;198m $(NAME) compiled \n \033[0;m"
 
 

@@ -6,7 +6,7 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 20:08:28 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/05/17 10:19:25 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/05/17 14:58:04 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ public:
     Cat(Cat const &toCopy);
     Cat &operator=(Cat const &toCopy);
     ~Cat();
-    void setType(std::string name);
-    std::string getType() const;
     virtual void makeSound() const;
     void setIdea(int nbr, std::string idea);
     std::string getIdea(int nbr) const;
