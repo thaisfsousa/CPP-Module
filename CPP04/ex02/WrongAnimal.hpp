@@ -26,7 +26,7 @@ protected:
 public:
     void setType(std::string name);
     std::string getType() const;
-    virtual void makeSound() const;
+    virtual void makeSound() const = 0;
     virtual ~WrongAnimal();
 };
 
