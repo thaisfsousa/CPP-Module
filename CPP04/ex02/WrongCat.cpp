@@ -6,19 +6,19 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 20:39:27 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/05/17 10:52:56 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/05/17 22:09:53 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat() : WrongAnimal()
+WrongCat::WrongCat()
 {
     std::cout << "WrongCat Default Constructor Called" << std::endl;
     WrongAnimal::setType("WrongCat");
 }
 
-WrongCat::WrongCat(WrongCat const &toCopy) : WrongAnimal()
+WrongCat::WrongCat(WrongCat const &toCopy)
 {
     std::cout << "WrongCat Constructor Called" << std::endl;
     *this = toCopy;
@@ -35,9 +35,4 @@ WrongCat &WrongCat::operator=(const WrongCat &toCopy)
 WrongCat::~WrongCat()
 {
     std::cout << "WrongCat Destructor Called" << std::endl;
-}
-
-void WrongCat::makeSound(void) const
-{
-    std::cout << "... faking a MIAU MIAU ..." << std::endl;
 }

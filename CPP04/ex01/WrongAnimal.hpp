@@ -6,7 +6,7 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 20:08:20 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/05/17 10:20:59 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/05/17 22:03:26 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ public:
     virtual ~WrongAnimal();
     void setType(std::string name);
     std::string getType() const;
-    virtual void makeSound() const;
+    void makeSound() const;
 };
 
 #endif
