@@ -6,7 +6,7 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 20:39:27 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/05/17 22:09:11 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/05/22 19:58:14 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,16 @@ WrongCat::WrongCat(WrongCat const &toCopy)
 WrongCat &WrongCat::operator=(const WrongCat &toCopy)
 {
     std::cout << "WrongCat Copy assigment operator called" << std::endl;
-    this->setType(toCopy.getType());
-    this->brain = toCopy.brain;
+    WrongAnimal::setType(toCopy.getType());
     return (*this);
 }
 
 WrongCat::~WrongCat()
 {
     std::cout << "WrongCat Destructor Called" << std::endl;
+}
+
+void WrongCat::makeSound(void) const
+{
+    std::cout << "...faking a MIAU MIAU... " << std::endl;
 }

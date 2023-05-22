@@ -6,14 +6,17 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 20:08:20 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/05/17 22:03:26 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/05/17 21:59:24 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WrongAnimal_HPP
 #define WrongAnimal_HPP
 
-#include "Brain.hpp"
+#include <string>
+#include <iostream>
+#include <sstream>
+#include <stdio.h>
 
 class WrongAnimal
 {
