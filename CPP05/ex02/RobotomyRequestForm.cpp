@@ -6,7 +6,7 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 18:29:32 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/08 19:01:55 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/07/11 20:45:01 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ void    RobotomyRequestForm::execute(const Bureaucrat &execute) const {
     if (this->getGradeExec() < execute.getGrade())
         throw AForm::GradeTooLowException();
     std::srand(0);
-    std::srand(std::time(0));
     std::cout << " 🤖 BRRRRRRRRRRR 🤖 " << std::endl;
     if ((rand() % 10) % 2 == 0)
         std::cout << this->getTarget() << " has been robotomizes successfully!" << std::endl;

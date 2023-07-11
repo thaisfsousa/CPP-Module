@@ -6,7 +6,7 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 11:09:54 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/08 19:57:12 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/07/11 20:38:48 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class AForm;
 
 class Bureaucrat
 {
-    protected:
+    private:
         const std::string _name;
         int _grade;
     public:

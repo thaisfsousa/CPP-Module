@@ -6,7 +6,7 @@
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 11:09:54 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/07 15:27:50 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/07/11 20:37:00 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 class Bureaucrat
 {
-    protected:
+    private:
         const std::string _name;
         int _grade;
     public:
