@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   serializer.hpp                                     :+:      :+:    :+:   */
+/*   C.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 19:31:28 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/21 10:29:17 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/07/21 10:46:29 by thaissousa       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SERIALIZER_HPP
-#define SERIALIZER_HPP
+#ifndef C_HPP
+#define C_HPP
 
-#include <iostream>
-#include <stdint.h>
+#include "Base.hpp"
 
-typedef struct {
-    std::string name;
-    int         nbr;
-}   Data;
-
-
-class Serializer
+class C : public Base
 {
-    private:
-        Serializer();
-        Serializer(const Serializer &toCopy);
     public:
-        ~Serializer();
-        Serializer &operator=(const Serializer &toCopy);
-        static uintptr_t   serialize(Data *ptr);
-        static Data *deserialize(uintptr_t nbr);
+        C();
+        ~C();
 };
-
 #endif
