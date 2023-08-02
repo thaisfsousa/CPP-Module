@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   C.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*   By: acalvo4 <acalvo4@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 19:31:28 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/21 10:46:29 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/08/02 14:30:27 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef C_HPP
 #define C_HPP
 
-#include "Base.hpp"
+#include "base.hpp"
 
 class C : public Base
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*   By: acalvo4 <acalvo4@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 19:31:24 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/21 11:09:34 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/08/02 14:55:10 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Base.hpp"
+#include "base.hpp"
 #include "A.hpp"
 #include "B.hpp"
 #include "C.hpp"

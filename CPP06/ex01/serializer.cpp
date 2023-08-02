@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   serializer.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*   By: acalvo4 <acalvo4@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 19:31:31 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/21 10:38:52 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/08/02 14:29:04 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Serializer.hpp"
+#include "serializer.hpp"
 
 Serializer::Serializer(){}
 

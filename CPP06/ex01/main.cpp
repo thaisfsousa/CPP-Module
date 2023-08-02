@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*   By: acalvo4 <acalvo4@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 19:31:24 by thaissousa        #+#    #+#             */
-/*   Updated: 2023/07/21 10:38:56 by thaissousa       ###   ########.fr       */
+/*   Updated: 2023/08/02 14:29:09 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Serializer.hpp"
+#include "serializer.hpp"
 
 int main() {
 	Data data;

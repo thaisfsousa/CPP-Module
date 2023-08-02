@@ -1,6 +1,6 @@
 NAME	= base
 
-SRCS	= 	main.cpp Base.cpp A.cpp B.cpp C.cpp
+SRCS	= 	main.cpp base.cpp A.cpp B.cpp C.cpp
 
 OBJS	=  $(SRCS:.cpp=.o)
 
