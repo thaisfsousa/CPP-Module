@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Span.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/20 13:19:57 by thaissousa        #+#    #+#             */
+/*   Updated: 2023/08/20 14:03:10 by thaissousa       ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Span.hpp"
 
 Span::Span(){
-    this->nbr = 0;
+    this->storage = 0;
 }
 
 Span::Span(const Span &toCopy){
@@ -9,11 +21,11 @@ Span::Span(const Span &toCopy){
 }
 
 Span::Span(unsigned int nbr){
-    this->nbr = nbr;
+    this->storage = nbr;
 }
 
 Span &Span::operator=(const Span &toCopy){
-    this->nbr = toCopy.nbr;
+    this->storage = toCopy.storage;
     this->numbers = toCopy.numbers;
     return *this;
 }
@@ -21,15 +33,15 @@ Span &Span::operator=(const Span &toCopy){
 Span::~Span(){}
 
 
-void    Span::addNumber(int nbr){
-    if (this->numbers.size() >= this->nbr)
+void    Span::addNumber(int addNbr){
+    if (this->numbers.size() >= this->storage)
         throw std::runtime_error("Exception: Already filled.");
-    this->numbers.push_back(nbr);
+    this->numbers.push_back(addNbr);
 }
 
 
 int    Span::shortestSpan(){
-    if (this->nbr <= 1 || this->numbers.size() <= 1)
+    if (this->storage <= 1 || this->numbers.size() <= 1)
         throw std::runtime_error("Exception: not enough numbers to compare.");
     int shortest = std::numeric_limits<int>::max();
     for (unsigned int i = 0; i < this->numbers.size(); i++){
@@ -49,7 +61,7 @@ int    Span::shortestSpan(){
 
 
 int    Span::longestSpan(){
-    if (this->nbr <= 1 || this->numbers.size() <= 1)
+    if (this->storage <= 1 || this->numbers.size() <= 1)
         throw std::runtime_error("Exception: not enough numbers to compare.");
     std::vector<int> buffer(this->numbers);
     sort(buffer.begin(), buffer.end());
@@ -62,7 +74,7 @@ void    Span::fillSpan(const std::vector<int>::iterator &start, const std::vecto
     while(begin != end)
         begin++;
     unsigned int len = this->numbers.size() + std::distance(start, end);
-    if (len > this->nbr)
+    if (len > this->storage)
         throw std::runtime_error("Exception: Already filled.");
     this->numbers.insert(this->numbers.end(), start, end);
 }

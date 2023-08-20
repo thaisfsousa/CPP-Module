@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   MutantStack.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/20 13:20:08 by thaissousa        #+#    #+#             */
+/*   Updated: 2023/08/20 17:34:31 by thaissousa       ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef MUTANTSTACK_HPP
 #define MUTANTSTACK_HPP
 
@@ -5,6 +17,7 @@
 #include <stack>
 #include <deque>
 #include <iterator>
+#include <cstdlib>
 
 template <typename T>
 class MutantStack : public std::stack <T, std::deque <T> >

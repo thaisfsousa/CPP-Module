@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thaissousa <thaissousa@student.42.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/20 13:19:53 by thaissousa        #+#    #+#             */
+/*   Updated: 2023/08/20 17:17:50 by thaissousa       ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Span.hpp"
 
 int main() {
@@ -26,7 +38,7 @@ int main() {
 		std::cout << std::endl << "----- Testing 10000 numbers ------" << std::endl;
 		Span sp3 = Span(10000);
 		std::vector<int> vec(10000);
-		for (int i = 0; i < 10000; i++)
+		for (int i = 1; i <= 10000; i++)
 			vec[i] = i;
 		sp3.fillSpan(vec.begin(), vec.end());
 		std::cout << sp3.shortestSpan() << std::endl;
